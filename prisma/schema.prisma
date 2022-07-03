@@ -10,7 +10,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Article {
+model Articles {
   id          Int       @id @default(autoincrement())
   createAt    DateTime  @default(now())
   title       String    @db.VarChar(255)

@@ -6,7 +6,7 @@ module.exports.createArticle = async ({
   content,
   author,
 }) => {
-  return await db.article.create({
+  return await db.articles.create({
     data: {
       title,
       urlPicture,
@@ -17,7 +17,7 @@ module.exports.createArticle = async ({
 };
 
 module.exports.patchArticle = async (data) => {
-  return await db.article
+  return await db.articles
     .update({
       where: {
         id: data.id,
@@ -32,14 +32,14 @@ module.exports.patchArticle = async (data) => {
 };
 
 module.exports.findAllArticles = () =>
-  db.article.findMany({
+  db.articles.findMany({
     orderBy: {
       id: "desc",
     },
   });
 
 module.exports.deleteArticle = (id) => {
-  return db.article.delete({
+  return db.articles.delete({
     where: {
       id,
     },
