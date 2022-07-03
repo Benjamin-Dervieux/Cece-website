@@ -1,5 +1,12 @@
-import styles from "../styles/Home.module.css";
+import Layout from "../components/Layout/Layout";
+import style from "../styles/Home.module.css";
 
 export default function Home() {
-  return <div>hello</div>;
+  return (
+    <Layout>
+      <div>
+        <h1 className={style.title}>Célia R</h1>
+      </div>
+    </Layout>
+  );
 }
