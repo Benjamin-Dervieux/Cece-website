@@ -2,8 +2,9 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding-top: 50px;
-  height: 50px;
+  padding-top: 30px;
+  height: 30px;
+  background-color: #4cbfa0;
 }
 
 .footer {

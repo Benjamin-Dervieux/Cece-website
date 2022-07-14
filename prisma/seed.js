@@ -1,8 +1,8 @@
 const db = require("../db");
 
 const seed = async () => {
-  await db.article.deleteMany();
-  await db.article.createMany({
+  await db.articles.deleteMany();
+  await db.articles.createMany({
     data: [
       {
         title: "First article",
