@@ -1,7 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Roboto, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: #b5f9e7;
+  font-family: "Edu SA Beginner", cursive, Helvetica Neue, sans-serif;
+  background-color: #a4e1d1;
 }

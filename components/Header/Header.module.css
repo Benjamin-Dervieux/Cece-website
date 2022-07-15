@@ -8,25 +8,49 @@
   cursor: pointer;
 }
 
-.subMenuBtn {
-  border-color: transparent;
-  background-color: antiquewhite;
-}
-
 .ul {
   display: flex;
   justify-content: space-around;
 }
 
-.li {
-  list-style-type: none;
-}
-
-.subMenu {
-  list-style: none;
-}
-
 .links {
   text-decoration: none;
   color: black;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownBtn {
+  background-color: #a4e1d1;
+  padding: 16px;
+  border: none;
+  font-family: "Edu SA Beginner", cursive, Helvetica Neue, sans-serif;
+  font-size: 1em;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #a4e1d1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdownContent a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdownContent a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
 }
