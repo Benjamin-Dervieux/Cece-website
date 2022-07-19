@@ -15,6 +15,7 @@
 
 .links {
   text-decoration: none;
+  font-size: 1.3em;
   color: black;
 }
 
@@ -25,10 +26,9 @@
 
 .dropdownBtn {
   background-color: #a4e1d1;
-  padding: 16px;
   border: none;
   font-family: "Edu SA Beginner", cursive, Helvetica Neue, sans-serif;
-  font-size: 1em;
+  font-size: 1.3em;
 }
 
 .dropdownContent {

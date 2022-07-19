@@ -27,10 +27,8 @@ const Header = () => {
             </Link>
 
             <div className={style.dropdown}>
-              <button className={style.dropdownBtn}>
-                Articles
-                <MdArrowDropDown />
-              </button>
+              <button className={style.dropdownBtn}>Articles</button>
+              <MdArrowDropDown className={style.arrowDropdown} />
               <div className={style.dropdownContent}>
                 <Link href="/news">
                   <a className={style.links}>News</a>

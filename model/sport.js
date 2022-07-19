@@ -1,12 +1,12 @@
 const db = require("../db");
 
-module.exports.createArticle = async ({
+module.exports.createSportArticle = async ({
   title,
   urlPicture,
   content,
   author,
 }) => {
-  return await db.articles.create({
+  return await db.sport.create({
     data: {
       title,
       urlPicture,
@@ -16,8 +16,8 @@ module.exports.createArticle = async ({
   });
 };
 
-module.exports.patchArticle = async (data) => {
-  return await db.articles
+module.exports.patchSportArticle = async (data) => {
+  return await db.sport
     .update({
       where: {
         id: data.id,
@@ -31,15 +31,15 @@ module.exports.patchArticle = async (data) => {
     .catch((_) => false);
 };
 
-module.exports.findAllArticles = () =>
-  db.articles.findMany({
+module.exports.findAllSportArticles = () =>
+  db.sport.findMany({
     orderBy: {
       id: "desc",
     },
   });
 
-module.exports.deleteArticle = (id) => {
-  return db.articles.delete({
+module.exports.deleteSportArticle = (id) => {
+  return db.sport.delete({
     where: {
       id,
     },
