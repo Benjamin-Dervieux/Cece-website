@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Layout from "../components/Layout/Layout";
 import style from "../styles/Home.module.css";
 
@@ -5,6 +6,9 @@ export default function Home() {
   return (
     <Layout>
       <div className={style.mainContainer}>
+        <div className={style.fraise2}>
+          <img src="/images/fraise.png" alt="strawberry" />
+        </div>
         <h1 className={style.title}>Célia Roettger - Nutritioniste</h1>
         <div className={style.content}>
           <p className={style.presentation}>
@@ -21,6 +25,9 @@ export default function Home() {
             consequatur? Temporibus, totam sapiente! Officiis temporibus maxime
             iusto explicabo et. Earum, quis!
           </p>
+        </div>
+        <div className={style.fraise1}>
+          <img src="/images/fraise.png" alt="strawberry" />
         </div>
       </div>
     </Layout>

@@ -13,3 +13,16 @@
   padding: 0 8em 0 8em;
   margin-top: 50px;
 }
+
+.fraise1 {
+  position: absolute;
+  left: -50px;
+  transform: rotate(45deg);
+}
+
+.fraise2 {
+  width: 6vw;
+  position: absolute;
+  right: 50px;
+  transform: rotate(-15deg);
+}
