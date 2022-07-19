@@ -1,0 +1,25 @@
+.btnScroll {
+  width: 5vw;
+  height: 5vh;
+  color: #44b093;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1rem 0 0 0;
+}
+
+.searchBar {
+  width: 20vw;
+  border: #44b093 1px solid;
+  border-radius: 10px;
+  padding: 10px 10px;
+  background-color: rgba(252, 244, 244, 0.6);
+}
+
+.searchBar::placeholder {
+  color: black;
+  padding-left: 20px;
+}

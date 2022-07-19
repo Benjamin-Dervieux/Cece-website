@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import style from "./Header.module.css";
-import { IoMdArrowDropdown } from "react-icons/io";
+import { MdArrowDropDown } from "react-icons/md";
 
 const Header = () => {
   return (
@@ -18,52 +18,35 @@ const Header = () => {
       <div className={style.mainNavContainer}>
         <nav className={style.navContainer}>
           <ul className={style.ul}>
-            <li className={style.li}>
-              <Link href="/">
-                <a className={style.links}>Home</a>
-              </Link>
-            </li>
+            <Link href="/">
+              <a className={style.links}>Home</a>
+            </Link>
 
-            <li className={style.li}>
-              <Link href="/about">
-                <a className={style.links}>About</a>
-              </Link>
-            </li>
+            <Link href="/about">
+              <a className={style.links}>About</a>
+            </Link>
 
-            <li className={style.subMenu}>
-              <Link href="/articles">
-                <a className={style.links}>Articles</a>
-              </Link>
+            <div className={style.dropdown}>
+              <button className={style.dropdownBtn}>Articles</button>
+              <MdArrowDropDown className={style.arrowDropdown} />
+              <div className={style.dropdownContent}>
+                <Link href="/news">
+                  <a className={style.links}>News</a>
+                </Link>
 
-              <button className={style.subMenuBtn}>
-                <IoMdArrowDropdown />
-              </button>
-              <div className={style.subMenuList}>
-                <ul>
-                  <li className={style.li}>
-                    <Link href="/articles/news">
-                      <a className={style.links}>News</a>
-                    </Link>
-                  </li>
-                  <li className={style.li}>
-                    <Link href="/articles/nutrition">
-                      <a className={style.links}>Nutrition</a>
-                    </Link>
-                  </li>
-                  <li className={style.li}>
-                    <Link href="/articles/sport">
-                      <a className={style.links}>Sport</a>
-                    </Link>
-                  </li>
-                </ul>
+                <Link href="/nutrition">
+                  <a className={style.links}>Nutrition</a>
+                </Link>
+
+                <Link href="/sport">
+                  <a className={style.links}>Sport</a>
+                </Link>
               </div>
-            </li>
+            </div>
 
-            <li className={style.li}>
-              <Link href="/contact">
-                <a className={style.links}>Contact</a>
-              </Link>
-            </li>
+            <Link href="/contact">
+              <a className={style.links}>Contact</a>
+            </Link>
           </ul>
         </nav>
       </div>
