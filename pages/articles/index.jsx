@@ -3,14 +3,14 @@ import Layout from "../../components/Layout/Layout";
 import { useState, useContext } from "react";
 import { CardContext } from "../../context/CardContext";
 import CardItem from "../../components/CardItem/CardItem";
-import FormNews from "../../components/Forms/FormNews/FormNews";
+import FormNews from "../../components/Forms/FormNews";
 import Link from "next/link";
 import { BsFillArrowDownCircleFill } from "react-icons/bs";
 
-const News = () => {
+const Articles = () => {
   const [searchValue, setSearchValue] = useState("");
 
-  const { newsList } = useContext(CardContext);
+  const { articleList } = useContext(CardContext);
 
   return (
     <Layout>
@@ -27,12 +27,12 @@ const News = () => {
             <BsFillArrowDownCircleFill className={style.btnScroll} />
           </Link>
         </div>
-        {newsList
-          .filter((news) =>
-            news.title.toUpperCase().includes(searchValue.toUpperCase())
+        {articleList
+          .filter((articles) =>
+            articles.title.toUpperCase().includes(searchValue.toUpperCase())
           )
-          .map((news) => (
-            <CardItem card={news} key={news.id} id={news.id} />
+          .map((articles) => (
+            <CardItem card={articles} key={articles.id} id={articles.id} />
           ))}
         <FormNews />
       </div>
@@ -40,4 +40,4 @@ const News = () => {
   );
 };
 
-export default News;
+export default Articles;

@@ -8,11 +8,13 @@ const FormNews = () => {
   const [author, setAuthor] = useState("");
   const [photo, setPhoto] = useState("");
   const [content, setContent] = useState("");
+  const [category, setCategory] = useState("");
 
   const [userTitle, setUserTitle] = useState("");
   const [userAuthor, setUserAuthor] = useState("");
   const [userPhoto, setUserPhoto] = useState("");
   const [userContent, setUserContent] = useState("");
+  const [userCategory, setUserCategory] = useState("");
 
   const HandleSubmitActuality = (e) => {
     e.preventDefault();
@@ -20,13 +22,15 @@ const FormNews = () => {
     setAuthor(!author);
     setPhoto(!photo);
     setContent(!content);
+    setCategory(!category);
 
     axios
-      .post("/api/news", {
+      .post("/api/articles", {
         title: userTitle,
         author: userAuthor,
         content: userContent,
         urlPicture: userPhoto,
+        category: userCategory,
       })
       .then((response) => {
         console.log(response);
@@ -36,6 +40,7 @@ const FormNews = () => {
         setUserAuthor("");
         setUserContent("");
         setUserPhoto("");
+        setUserCategory("");
       });
   };
 
@@ -44,7 +49,7 @@ const FormNews = () => {
       <div className={style.container}>
         <div className={style.contactBox}>
           <div className={style.right}>
-            <h2 className={style.title}>Share New Actuality Post</h2>
+            <h2 className={style.title}>Share New Post</h2>
             <input
               type="text"
               className={style.field}
@@ -65,6 +70,13 @@ const FormNews = () => {
               placeholder="Photo URL"
               value={userPhoto}
               onChange={(e) => setUserPhoto(e.target.value)}
+            />
+            <input
+              type="text"
+              className={style.field}
+              placeholder="Category"
+              value={userCategory}
+              onChange={(e) => setUserCategory(e.target.value)}
             />
             <textarea
               id={style.textarea}

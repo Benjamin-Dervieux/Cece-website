@@ -26,23 +26,9 @@ const Header = () => {
               <a className={style.links}>About Me</a>
             </Link>
 
-            <div className={style.dropdown}>
-              <button className={style.dropdownBtn}>Articles</button>
-              <MdArrowDropDown className={style.arrowDropdown} />
-              <div className={style.dropdownContent}>
-                <Link href="/news">
-                  <a className={style.links}>News</a>
-                </Link>
-
-                <Link href="/nutrition">
-                  <a className={style.links}>Nutrition</a>
-                </Link>
-
-                <Link href="/sport">
-                  <a className={style.links}>Sport</a>
-                </Link>
-              </div>
-            </div>
+            <Link href="/articles">
+              <a className={style.links}>Articles</a>
+            </Link>
 
             <Link href="/contact">
               <a className={style.links}>Contact</a>

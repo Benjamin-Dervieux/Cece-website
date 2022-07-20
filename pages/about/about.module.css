@@ -1,0 +1,30 @@
+.title {
+  height: 20vh;
+  display: flex;
+  justify-content: left;
+  padding-left: 170px;
+  padding-top: 150px;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.about {
+  text-align: justify;
+  font-size: 1.3em;
+  padding: 0 8em 0 8em;
+  margin-top: 60px;
+}
+
+.cece {
+  width: 10vw;
+  position: absolute;
+  left: 170px;
+  border-radius: 50px;
+  margin-top: 30px;
+}
+
+.fraise {
+  position: absolute;
+  bottom: -20px;
+  right: 500px;
+}

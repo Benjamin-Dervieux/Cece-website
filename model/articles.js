@@ -1,23 +1,25 @@
 const db = require("../db");
 
-module.exports.createSportArticle = async ({
+module.exports.createNewArticle = async ({
   title,
   urlPicture,
   content,
   author,
+  category,
 }) => {
-  return await db.sport.create({
+  return await db.articles.create({
     data: {
       title,
       urlPicture,
       content,
       author,
+      category,
     },
   });
 };
 
-module.exports.patchSportArticle = async (data) => {
-  return await db.sport
+module.exports.patchArticle = async (data) => {
+  return await db.articles
     .update({
       where: {
         id: data.id,
@@ -25,21 +27,22 @@ module.exports.patchSportArticle = async (data) => {
       data: {
         title: data.title,
         urlPicture: data.urlPicture,
+        category: data.category,
         content: data.content,
       },
     })
     .catch((_) => false);
 };
 
-module.exports.findAllSportArticles = () =>
-  db.sport.findMany({
+module.exports.findAllArticles = () =>
+  db.articles.findMany({
     orderBy: {
       id: "desc",
     },
   });
 
-module.exports.deleteSportArticle = (id) => {
-  return db.sport.delete({
+module.exports.deleteArticle = (id) => {
+  return db.articles.delete({
     where: {
       id,
     },

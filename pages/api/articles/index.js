@@ -1,13 +1,13 @@
-import { createNewsArticle, findAllNewsArticles } from "../../../model/news";
+import { createNewArticle, findAllArticles } from "../../../model/articles";
 import base from "../../../middleware/common";
 
 const handlePost = async (req, res) => {
-  const newsPost = await createNewsArticle(req.body);
+  const newsPost = await createNewArticle(req.body);
   return res.status(201).send(newsPost);
 };
 
 async function handleGet(req, res) {
-  res.send(await findAllNewsArticles());
+  res.send(await findAllArticles());
 }
 
 export default base().post(handlePost).get(handleGet);

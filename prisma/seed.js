@@ -1,68 +1,48 @@
-const db = require("../lib/prisma");
+const db = require("../db");
 
 const seed = async () => {
-  await db.news.deleteMany();
-  await db.news.createMany({
+  await db.articles.deleteMany();
+  await db.articles.createMany({
     data: [
       {
         title: "First article",
-        urlPicture:
-          "https://chartwell.com/fr/blogue/2019/02/six-conseils-pour-favoriser-une-bonne-nutrition-et-une-saine-alimentation",
+        urlPicture: "/images/nutri3.jpg",
         content:
           "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas numquam in nesciunt, eligendi quos nemo libero, quod reprehenderit neque doloribus, odit magnam ullam commodi vitae nulla inventore autem? Repudiandae corporis doloribus odit tenetur alias officiis at earum et soluta mollitia minus sint id, eligendi aperiam error, quisquam, voluptatem dicta animi.",
         author: "Célia Roettger",
+        category: "News",
       },
-
       {
         title: "Second article",
-        urlPicture: "https://esclarmonde.net/formations/nutrition-sante/",
+        urlPicture: "/images/nutri2.jpg",
         content:
           "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas numquam in nesciunt, eligendi quos nemo libero, quod reprehenderit neque doloribus, odit magnam ullam commodi vitae nulla inventore autem? Repudiandae corporis doloribus odit tenetur alias officiis at earum et soluta mollitia minus sint id, eligendi aperiam error, quisquam, voluptatem dicta animi.",
         author: "Célia Roettger",
+        category: "Nutrition",
       },
-    ],
-  });
-
-  await db.nutrition.deleteMany();
-  await db.nutrition.createMany({
-    data: [
       {
-        title: "First article",
-        urlPicture:
-          "https://chartwell.com/fr/blogue/2019/02/six-conseils-pour-favoriser-une-bonne-nutrition-et-une-saine-alimentation",
+        title: "Third article",
+        urlPicture: "/images/nutri2.jpg",
         content:
           "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas numquam in nesciunt, eligendi quos nemo libero, quod reprehenderit neque doloribus, odit magnam ullam commodi vitae nulla inventore autem? Repudiandae corporis doloribus odit tenetur alias officiis at earum et soluta mollitia minus sint id, eligendi aperiam error, quisquam, voluptatem dicta animi.",
         author: "Célia Roettger",
+        category: "News",
       },
-
       {
-        title: "Second article",
-        urlPicture: "https://esclarmonde.net/formations/nutrition-sante/",
+        title: "Fourth article",
+        urlPicture: "/images/sport.jpg",
         content:
           "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas numquam in nesciunt, eligendi quos nemo libero, quod reprehenderit neque doloribus, odit magnam ullam commodi vitae nulla inventore autem? Repudiandae corporis doloribus odit tenetur alias officiis at earum et soluta mollitia minus sint id, eligendi aperiam error, quisquam, voluptatem dicta animi.",
         author: "Célia Roettger",
+        category: "Sport",
       },
-    ],
-  });
-
-  await db.sport.deleteMany();
-  await db.sport.createMany({
-    data: [
       {
-        title: "First article",
-        urlPicture:
-          "https://chartwell.com/fr/blogue/2019/02/six-conseils-pour-favoriser-une-bonne-nutrition-et-une-saine-alimentation",
+        title: "fifth article",
+        urlPicture: "/images/sport2.jpg",
         content:
           "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas numquam in nesciunt, eligendi quos nemo libero, quod reprehenderit neque doloribus, odit magnam ullam commodi vitae nulla inventore autem? Repudiandae corporis doloribus odit tenetur alias officiis at earum et soluta mollitia minus sint id, eligendi aperiam error, quisquam, voluptatem dicta animi.",
         author: "Célia Roettger",
-      },
-
-      {
-        title: "Second article",
-        urlPicture: "https://esclarmonde.net/formations/nutrition-sante/",
-        content:
-          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas numquam in nesciunt, eligendi quos nemo libero, quod reprehenderit neque doloribus, odit magnam ullam commodi vitae nulla inventore autem? Repudiandae corporis doloribus odit tenetur alias officiis at earum et soluta mollitia minus sint id, eligendi aperiam error, quisquam, voluptatem dicta animi.",
-        author: "Célia Roettger",
+        category: "Nutrition",
       },
     ],
   });

@@ -7,29 +7,12 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model news {
+model articles {
   id          Int       @id @default(autoincrement())
   createAt    DateTime  @default(now())
   title       String    @db.VarChar(255)
   urlPicture  String    @db.VarChar(255)
   content     String    @db.Text()
   author      String    @db.VarChar(255)
-}
-
-model nutrition {
-  id          Int       @id @default(autoincrement())
-  createAt    DateTime  @default(now())
-  title       String    @db.VarChar(255)
-  urlPicture  String    @db.VarChar(255)
-  content     String    @db.Text()
-  author      String    @db.VarChar(255)
-}
-
-model sport {
-  id          Int       @id @default(autoincrement())
-  createAt    DateTime  @default(now())
-  title       String    @db.VarChar(255)
-  urlPicture  String    @db.VarChar(255)
-  content     String    @db.Text()
-  author      String    @db.VarChar(255)
+  category    String    @db.VarChar(255)
 }
