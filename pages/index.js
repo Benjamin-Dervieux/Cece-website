@@ -6,7 +6,9 @@ export default function Home() {
   return (
     <Layout>
       <div className={style.mainContainer}>
-        <h1 className={style.title}>Célia Roettger - Nutritioniste</h1>
+        <div className={style.title}>
+          <h1 className={style.h1}>Célia Roettger - Nutritioniste</h1>
+        </div>
         <div className={style.content}>
           <p className={style.presentation}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam

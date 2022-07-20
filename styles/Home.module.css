@@ -21,3 +21,35 @@
   bottom: 60px;
   transform: rotate(45deg);
 }
+
+@media screen and (max-width: 740px) {
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .h1 {
+    text-align: center;
+  }
+
+  .presentation {
+    text-align: justify;
+    font-size: 1em;
+    padding: 0 8em 0 8em;
+  }
+
+  .fraise1 {
+    position: absolute;
+    left: -6px;
+    bottom: 15px;
+    transform: rotate(45deg);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fraise1 {
+    width: 30vw;
+    left: -14px;
+    bottom: 28px;
+    transform: rotate(-25deg);
+  }
+}
