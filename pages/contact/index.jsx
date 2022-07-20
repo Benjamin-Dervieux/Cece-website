@@ -1,7 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 import style from "./contact.module.css";
 import Layout from "../../components/Layout/Layout";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Link from "next/link";
 
 const Contact = () => {
   const form = useRef();
@@ -68,6 +70,34 @@ const Contact = () => {
             Send Message
           </button>
         </form>
+
+        <div className={style.fraise}>
+          <img src="/images/fraise.png" alt="strawberry" />
+        </div>
+
+        <div className={style.displayLinks}>
+          <div className={style.link}>
+            <Link href="https://fr-fr.facebook.com/">
+              <a>
+                <img src="/images/fb.png" alt="strawberry" />
+              </a>
+            </Link>
+          </div>
+          <div className={style.link}>
+            <Link href="https://www.instagram.com/?hl=fr">
+              <a>
+                <img src="/images/insta.png" alt="strawberry" />
+              </a>
+            </Link>
+          </div>
+          <div className={style.link}>
+            <Link href="https://twitter.com/?lang=fr">
+              <a>
+                <img src="/images/twitter.png" alt="strawberry" />
+              </a>
+            </Link>
+          </div>
+        </div>
       </div>
     </Layout>
   );
