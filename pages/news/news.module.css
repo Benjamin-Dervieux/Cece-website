@@ -1,7 +1,7 @@
 .btnScroll {
   width: 5vw;
   height: 5vh;
-  color: #44b093;
+  color: #972839;
 }
 
 .searchContainer {
@@ -13,7 +13,7 @@
 
 .searchBar {
   width: 20vw;
-  border: #44b093 1px solid;
+  border: #972839 1px solid;
   border-radius: 10px;
   padding: 10px 10px;
   background-color: rgba(252, 244, 244, 0.6);

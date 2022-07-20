@@ -10,7 +10,7 @@ const Header = () => {
         <Link href="/home">
           <img
             className={style.logo}
-            src="/images/ceceLogo.png"
+            src="/images/logo.png"
             alt="logo Célia Roettger"
           />
         </Link>
@@ -23,7 +23,7 @@ const Header = () => {
             </Link>
 
             <Link href="/about">
-              <a className={style.links}>About</a>
+              <a className={style.links}>About Me</a>
             </Link>
 
             <div className={style.dropdown}>

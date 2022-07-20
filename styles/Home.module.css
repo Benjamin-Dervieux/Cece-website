@@ -1,8 +1,9 @@
 .title {
   height: 20vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  padding-left: 170px;
+  padding-top: 150px;
   font-size: 1.5em;
   font-weight: 600;
 }
@@ -11,18 +12,12 @@
   text-align: justify;
   font-size: 1.3em;
   padding: 0 8em 0 8em;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .fraise1 {
   position: absolute;
   left: -50px;
+  bottom: 60px;
   transform: rotate(45deg);
-}
-
-.fraise2 {
-  width: 6vw;
-  position: absolute;
-  right: 50px;
-  transform: rotate(-15deg);
 }

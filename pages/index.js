@@ -6,9 +6,6 @@ export default function Home() {
   return (
     <Layout>
       <div className={style.mainContainer}>
-        <div className={style.fraise2}>
-          <img src="/images/fraise.png" alt="strawberry" />
-        </div>
         <h1 className={style.title}>Célia Roettger - Nutritioniste</h1>
         <div className={style.content}>
           <p className={style.presentation}>

@@ -9,5 +9,5 @@ export default function base() {
     onNoMatch: (req, res) => {
       res.status(404).end("Not found");
     },
-  });
+  }).use(logger);
 }

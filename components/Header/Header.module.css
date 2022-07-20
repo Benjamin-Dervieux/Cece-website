@@ -1,6 +1,7 @@
 .logoContainer {
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 }
 
 .logo {
@@ -26,7 +27,7 @@
 }
 
 .dropdownBtn {
-  background-color: #a4e1d1;
+  background-color: white;
   border: none;
   font-family: "Edu SA Beginner", cursive, Helvetica Neue, sans-serif;
   font-size: 1.3em;
@@ -35,7 +36,7 @@
 .dropdownContent {
   display: none;
   position: absolute;
-  background-color: #a4e1d1;
+  background-color: #c53348;
   border-radius: 15px;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -50,7 +51,7 @@
 }
 
 .dropdownContent a:hover {
-  background-color: #4cbfa0;
+  background-color: #972839;
 }
 
 .dropdown:hover .dropdownContent {
