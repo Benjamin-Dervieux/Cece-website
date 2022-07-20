@@ -20,3 +20,7 @@
   font-size: 1.3em;
   color: black;
 }
+
+.links:hover {
+  text-decoration: underline #c53348;
+}
