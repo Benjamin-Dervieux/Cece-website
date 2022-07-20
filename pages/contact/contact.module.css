@@ -10,7 +10,8 @@
   height: 4vh;
   margin: 1rem;
   border-radius: 0.5rem;
-  border: 1px solid #000000;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .textarea {
@@ -18,7 +19,8 @@
   height: 20vh;
   margin: 1rem;
   border-radius: 0.5rem;
-  border: 1px solid #000000;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .formBtn {
@@ -45,4 +47,75 @@
 
 .link {
   width: 5vw;
+}
+
+@media screen and (max-width: 740px) {
+  .input {
+    width: 50vw;
+    height: 4vh;
+  }
+  .textarea {
+    width: 50vw;
+  }
+  .formBtn {
+    width: 35vw;
+    height: 4vh;
+    border-radius: 10px;
+    background-color: #c53348;
+    color: white;
+  }
+
+  .fraise {
+    width: 20vw;
+    position: absolute;
+    bottom: 500px;
+    left: -30px;
+    transform: rotate(25deg);
+  }
+  .displayLinks {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+
+  .link {
+    width: 5vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .form {
+    margin-top: 100px;
+  }
+  .input {
+    width: 50vw;
+    height: 4vh;
+  }
+  .textarea {
+    width: 50vw;
+  }
+  .formBtn {
+    width: 35vw;
+    height: 4vh;
+    border-radius: 10px;
+    background-color: #c53348;
+    color: white;
+    margin-top: 30px;
+  }
+
+  .fraise {
+    width: 30vw;
+    position: absolute;
+    bottom: 400px;
+    left: -30px;
+    transform: rotate(25deg);
+  }
+  .displayLinks {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .link {
+    width: 8vw;
+  }
 }
