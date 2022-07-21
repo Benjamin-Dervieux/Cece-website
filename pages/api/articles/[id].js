@@ -1,4 +1,4 @@
-import { patchArticle, deleteArticle } from "../../../model/news";
+import { patchArticle, deleteArticle } from "../../../model/articles";
 import base from "../../../middleware/common";
 
 const handlePatch = async (req, res) => {

@@ -4,6 +4,8 @@ import Layout from "../../components/Layout/Layout";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Link from "next/link";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const form = useRef();
@@ -26,6 +28,12 @@ const Contact = () => {
       }
     );
   };
+
+  const notify = () =>
+    toast(
+      "Thank's for your message, we will get back to you as soon as possible "
+    );
+
   return (
     <Layout>
       <div>
@@ -66,9 +74,10 @@ const Contact = () => {
             placeholder="Your Message"
             required
           ></textarea>
-          <button type="submit" className={style.formBtn}>
+          <button type="submit" className={style.formBtn} onClick={notify}>
             Send Message
           </button>
+          <ToastContainer />
         </form>
 
         <div className={style.fraise}>
