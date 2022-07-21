@@ -1,0 +1,48 @@
+.titleAndPhoto {
+  height: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.h1 {
+  height: 20vh;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.cece {
+  width: 15vw;
+  border-radius: 50%;
+}
+
+.about {
+  text-align: justify;
+  font-size: 1.3em;
+  padding: 0 8em 0 8em;
+  margin-top: 40px;
+}
+
+.fraise {
+  position: absolute;
+  bottom: -20px;
+  right: 500px;
+}
+
+@media screen and (max-width: 740px) {
+  .titleAndPhoto {
+    margin-top: 80px;
+  }
+  .cece {
+    width: 30vw;
+    border-radius: 60%;
+  }
+  .content {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+}
