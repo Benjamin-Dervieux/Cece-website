@@ -2,6 +2,7 @@
   width: 5vw;
   height: 5vh;
   color: #972839;
+  cursor: pointer;
 }
 
 .searchContainer {

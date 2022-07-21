@@ -14,7 +14,7 @@
 }
 
 .cece {
-  width: 15vw;
+  width: 10vw;
   border-radius: 50%;
 }
 
@@ -22,10 +22,11 @@
   text-align: justify;
   font-size: 1.3em;
   padding: 0 8em 0 8em;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .fraise {
+  width: 8vw;
   position: absolute;
   bottom: -20px;
   right: 500px;
