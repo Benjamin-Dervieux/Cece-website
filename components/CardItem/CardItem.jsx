@@ -15,18 +15,18 @@ const CardItem = ({ card }) => {
                 className={style.imageStyle}
                 src={card.urlPicture}
                 alt={card.title}
-                height="100%"
-                width="100%"
               />
             </div>
             <div className={style.infoStyle}>
-              <p>{newFormatdate}</p>
-              <h1>{card.title}</h1>
+              <h1 className={style.h1}>
+                {card.title} - {card.category}
+              </h1>
+              <p className={style.date}>{newFormatdate}</p>
             </div>
           </div>
 
           <p className={style.textStyle}>{card.content}</p>
-          <h4>{card.author}</h4>
+          <h4 className={style.h4}>{card.author}</h4>
         </div>
       </div>
     </>

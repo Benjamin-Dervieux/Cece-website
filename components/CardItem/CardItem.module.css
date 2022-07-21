@@ -14,21 +14,11 @@
   padding: 0px 30px 0px 30px;
 }
 
-.textStyle {
-  line-height: 1.5rem;
-  letter-spacing: 1px;
-  margin: 30px 10px 30px 10px;
-  height: 200px;
-  overflow-y: scroll;
-}
-
 .imageContainer {
   position: absolute;
   margin: 10px 0 0px 10px;
-  height: 200px;
-  width: 200px;
+  width: 270px;
   border-radius: 25px;
-  box-shadow: 1px 1px 20px #bebebe, -1px -1px 20px #bebebe;
   top: -60px;
 }
 .imageStyle {
@@ -39,5 +29,31 @@
   justify-content: flex-start;
 }
 .infoStyle {
-  margin-left: 250px;
+  margin-top: 20px;
+  margin-left: 320px;
+}
+
+.h1 {
+  text-decoration: underline;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+.date {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.textStyle {
+  line-height: 1.5rem;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  margin: 80px 15px;
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.h4 {
+  font-size: 1.3em;
+  font-weight: 500;
 }

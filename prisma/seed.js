@@ -9,7 +9,7 @@ const seed = async () => {
         urlPicture: "/images/nutri3.jpg",
         content:
           "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas numquam in nesciunt, eligendi quos nemo libero, quod reprehenderit neque doloribus, odit magnam ullam commodi vitae nulla inventore autem? Repudiandae corporis doloribus odit tenetur alias officiis at earum et soluta mollitia minus sint id, eligendi aperiam error, quisquam, voluptatem dicta animi.",
-        author: "Célia Roettger",
+        author: "Célia.R",
         category: "News",
       },
       {
@@ -17,7 +17,7 @@ const seed = async () => {
         urlPicture: "/images/nutri2.jpg",
         content:
           "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas numquam in nesciunt, eligendi quos nemo libero, quod reprehenderit neque doloribus, odit magnam ullam commodi vitae nulla inventore autem? Repudiandae corporis doloribus odit tenetur alias officiis at earum et soluta mollitia minus sint id, eligendi aperiam error, quisquam, voluptatem dicta animi.",
-        author: "Célia Roettger",
+        author: "Célia.R",
         category: "Nutrition",
       },
       {
@@ -25,7 +25,7 @@ const seed = async () => {
         urlPicture: "/images/nutri2.jpg",
         content:
           "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas numquam in nesciunt, eligendi quos nemo libero, quod reprehenderit neque doloribus, odit magnam ullam commodi vitae nulla inventore autem? Repudiandae corporis doloribus odit tenetur alias officiis at earum et soluta mollitia minus sint id, eligendi aperiam error, quisquam, voluptatem dicta animi.",
-        author: "Célia Roettger",
+        author: "Célia.R",
         category: "News",
       },
       {
@@ -33,15 +33,15 @@ const seed = async () => {
         urlPicture: "/images/sport.jpg",
         content:
           "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas numquam in nesciunt, eligendi quos nemo libero, quod reprehenderit neque doloribus, odit magnam ullam commodi vitae nulla inventore autem? Repudiandae corporis doloribus odit tenetur alias officiis at earum et soluta mollitia minus sint id, eligendi aperiam error, quisquam, voluptatem dicta animi.",
-        author: "Célia Roettger",
+        author: "Célia.R",
         category: "Sport",
       },
       {
         title: "fifth article",
-        urlPicture: "/images/sport2.jpg",
+        urlPicture: "/images/nutri3.jpg",
         content:
           "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas numquam in nesciunt, eligendi quos nemo libero, quod reprehenderit neque doloribus, odit magnam ullam commodi vitae nulla inventore autem? Repudiandae corporis doloribus odit tenetur alias officiis at earum et soluta mollitia minus sint id, eligendi aperiam error, quisquam, voluptatem dicta animi.",
-        author: "Célia Roettger",
+        author: "Célia.R",
         category: "Nutrition",
       },
     ],

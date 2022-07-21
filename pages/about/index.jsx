@@ -5,7 +5,8 @@ import Layout from "../../components/Layout/Layout";
 const about = () => {
   return (
     <Layout>
-      <div className={style.title}>
+      <div className={style.titleAndPhoto}>
+        <img className={style.cece} src="/images/cece.jpg" alt="strawberry" />
         <h1 className={style.h1}>About Me</h1>
       </div>
 
@@ -24,9 +25,7 @@ const about = () => {
           sapiente! Officiis temporibus maxime iusto explicabo et. Earum, quis!
         </p>
       </div>
-      <div className={style.cece}>
-        <img src="/images/cece.jpg" alt="strawberry" />
-      </div>
+
       <div className={style.fraise}>
         <img src="/images/fraise.png" alt="strawberry" />
       </div>
