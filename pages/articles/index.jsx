@@ -27,6 +27,7 @@ const Articles = () => {
             <BsFillArrowDownCircleFill className={style.btnScroll} />
           </Link>
         </div>
+
         {articleList
           .filter((articles) =>
             articles.title.toUpperCase().includes(searchValue.toUpperCase())
@@ -34,6 +35,7 @@ const Articles = () => {
           .map((articles) => (
             <CardItem card={articles} key={articles.id} id={articles.id} />
           ))}
+
         <FormNews />
       </div>
     </Layout>
