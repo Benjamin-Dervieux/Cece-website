@@ -1,0 +1,69 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 75vh;
+}
+
+.container {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.input {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 8px 4px;
+  margin: 8px 0;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  font-size: 1.2rem;
+  margin: 8px 0;
+  padding: 10px 0;
+  background-color: #c53348;
+  color: #fff;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btnOutline {
+  display: block;
+  width: 100%;
+  font-size: 1.2rem;
+  margin: 8px 0;
+  padding: 10px 0;
+  background-color: #c53348;
+  color: #fff;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
+  margin: 24px 0;
+  text-decoration: underline;
+}
+
+.p {
+  margin: 10px 0;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  height: 200px;
+}
