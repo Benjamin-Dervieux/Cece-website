@@ -14,7 +14,7 @@ const CardItem = ({ card }) => {
     ) {
       await axios.delete(`/api/articles/${id}`);
       alert("projet bien supprimé");
-      setArticle((articles) => projects.filter((article) => article.id !== id));
+      setArticle((article) => article.filter((a) => a.id !== id));
     }
   };
 
