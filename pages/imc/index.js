@@ -53,7 +53,7 @@ const Imc = () => {
           <h1 className={style.center}>Calculez votre IMC</h1>
           <form action="imc" onSubmit={calcImc}>
             <div>
-              <label htmlFor="height">Votre taille</label>
+              <label htmlFor="height">Votre taille :</label>
               <input
                 className={style.input}
                 type="text"
@@ -64,7 +64,7 @@ const Imc = () => {
               />
             </div>
             <div>
-              <label htmlFor="weight">Votre poid</label>
+              <label htmlFor="weight">Votre poid :</label>
               <input
                 className={style.input}
                 type="text"
