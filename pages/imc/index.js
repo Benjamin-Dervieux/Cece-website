@@ -4,8 +4,8 @@ import Layout from "../../components/Layout/Layout";
 import { useState } from "react";
 
 const Imc = () => {
-  const [weight, setWeight] = useState(0);
-  const [height, setHeight] = useState(0);
+  const [weight, setWeight] = useState("");
+  const [height, setHeight] = useState("");
   const [imc, setImc] = useState("");
   const [message, setMessage] = useState("");
 
@@ -19,11 +19,11 @@ const Imc = () => {
       setImc(imc.toFixed(1));
 
       if (imc < 18) {
-        setMessage("Vous êtes en sous-poids");
+        setMessage("You are underweight");
       } else if (imc >= 18 && imc < 25) {
-        setMessage("Vous avez un poids normal");
+        setMessage("You are a healthy weight");
       } else {
-        setMessage("Vous êtes en surpoids");
+        setMessage("You are overweight");
       }
     }
   };
@@ -50,10 +50,10 @@ const Imc = () => {
     <Layout>
       <div className={style.mainContainer}>
         <div className={style.container}>
-          <h1 className={style.center}>Calculez votre IMC</h1>
+          <h1 className={style.center}>BMI Calculator</h1>
           <form action="imc" onSubmit={calcImc}>
             <div>
-              <label htmlFor="height">Votre taille :</label>
+              <label htmlFor="height">Your height :</label>
               <input
                 className={style.input}
                 type="text"
@@ -64,7 +64,7 @@ const Imc = () => {
               />
             </div>
             <div>
-              <label htmlFor="weight">Votre poid :</label>
+              <label htmlFor="weight">Your weight :</label>
               <input
                 className={style.input}
                 type="text"
@@ -76,14 +76,14 @@ const Imc = () => {
             </div>
             <div>
               <button className={style.btn} type="submit">
-                Calculer
+                Submit
               </button>
               <button
                 className={style.btnOutline}
                 type="submit"
                 onClick={reload}
               >
-                Recharger
+                Reload
               </button>
             </div>
           </form>

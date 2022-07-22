@@ -57,3 +57,17 @@
   font-size: 1.3em;
   font-weight: 500;
 }
+
+.remove {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: #c53348;
+  width: 10vw;
+  height: 4vh;
+  border-radius: 20px;
+  box-shadow: 1px 1px 20px #bebebe, -1px -1px 20px #bebebe;
+}
