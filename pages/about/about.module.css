@@ -14,22 +14,29 @@
 }
 
 .cece {
-  width: 10vw;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
+}
+
+.content {
+  width: 80vw;
 }
 
 .about {
   text-align: justify;
   font-size: 1.3em;
   padding: 0 8em 0 8em;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-left: 400px;
+  margin-bottom: 100px;
 }
 
 .fraise {
   width: 8vw;
-  position: absolute;
+  position: fixed;
   bottom: -20px;
-  right: 500px;
+  right: 300px;
 }
 
 @media screen and (max-width: 740px) {

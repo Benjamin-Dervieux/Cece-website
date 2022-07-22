@@ -30,6 +30,10 @@ const Header = () => {
               <a className={style.links}>Articles</a>
             </Link>
 
+            <Link href="/imc">
+              <a className={style.links}>IMC Calculator</a>
+            </Link>
+
             <Link href="/contact">
               <a className={style.links}>Contact</a>
             </Link>

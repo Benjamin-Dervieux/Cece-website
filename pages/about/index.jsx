@@ -12,17 +12,18 @@ const about = () => {
 
       <div className={style.content}>
         <p className={style.about}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam omnis
-          aspernatur ipsam distinctio sequi quia dolorum id, culpa laudantium
-          cupiditate cumque, beatae pariatur soluta. Temporibus mollitia impedit
-          odio vitae assumenda necessitatibus vel nesciunt in harum ipsum. Earum
-          reiciendis, quia dolorum nostrum nemo fuga labore ea cupiditate magni
-          dolorem maiores, eligendi accusantium ratione. Expedita, rem! Autem,
-          impedit! Quae ducimus deleniti, doloribus perspiciatis vel minima odio
-          obcaecati nesciunt magnam hic error voluptas veniam amet sed
-          temporibus ut ea dolorum pariatur fugit! Recusandae, pariatur fuga.
-          Beatae, unde hic quos laboriosam minima consequatur? Temporibus, totam
-          sapiente! Officiis temporibus maxime iusto explicabo et. Earum, quis!
+          Après avoir fait des études de commerce et de management, et riche de
+          5 ans d’expériences dans l’agroalimentaire et le sport, j’ai fait le
+          choix de me réorienter dans un domaine qui fait partie de mes centres
+          d’intérêts depuis longtemps: la diététique et la nutrition. J’ai donc
+          décidé de me former à distance, en parallèle de mon activité
+          professionnelle, avec l’objectif d’obtenir le BTS Diététique en été
+          2023. Ma passion pour le sport m’a amenée à en faire mon métier et je
+          me suis tout naturellement intéressée davantage à la nutrition vu la
+          complémentarité de ces deux univers. Je suis convaincue que
+          l’empathie, la passion et la capacité d’accompagnement sont des
+          compétences fondamentales du métier de nutritionniste, compétences
+          acquises au cours de mes expériences professionnelles.
         </p>
       </div>
 
