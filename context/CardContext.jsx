@@ -15,7 +15,7 @@ export const CardProvider = ({ children }) => {
       .then((data) => {
         setArticleList(data);
       });
-  }, []);
+  }, [articleList]);
 
   return (
     <CardContext.Provider
