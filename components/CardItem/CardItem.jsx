@@ -5,6 +5,7 @@ import * as dayjs from "dayjs";
 const CardItem = ({ card }) => {
   const date = card.createdAt;
   const newFormatdate = dayjs(date).format("MMMM D, YYYY h:mm A");
+
   return (
     <>
       <div className={style.mainWrapper}>
@@ -27,6 +28,11 @@ const CardItem = ({ card }) => {
 
           <p className={style.textStyle}>{card.content}</p>
           <h4 className={style.h4}>{card.author}</h4>
+          <div className={style.remove}>
+            <button className={style.btn} type="button">
+              Delete article
+            </button>
+          </div>
         </div>
       </div>
     </>
