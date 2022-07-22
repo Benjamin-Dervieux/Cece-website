@@ -2,10 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Edu+SA+Beginner&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Edu SA Beginner", cursive, Helvetica Neue, sans-serif;
+  font-family: "Abel", "Edu SA Beginner", cursive, sans-serif;
   background-color: rgba(252, 242, 244, 0.6);
 }
