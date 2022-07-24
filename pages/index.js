@@ -13,7 +13,7 @@ export default function Home() {
           <div className={style.content}>
             <div>
               <p className={style.presentation}>
-                Blog nutrition : la diététique à portée de clic Ce blog de
+                Blog nutrition : la diététique à portée de clic. Ce blog de
                 nutrition à pour but de vous apporter des informations utiles
                 sur la diététique. En tant que diététicienne nutritionniste, je
                 partage tout ce que je sais aux travers d’articles serieux ou

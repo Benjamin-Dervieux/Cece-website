@@ -6,7 +6,8 @@ import { MdArrowDropDown } from "react-icons/md";
 const Header = () => {
   return (
     <div className={style.mainHeaderContainer}>
-      <div className={style.logoContainer}>
+      <div className={style.logoLoginWrapper}>
+        <div className={style.logoContainer}></div>
         <Link href="/home">
           <img
             className={style.logo}
@@ -14,6 +15,20 @@ const Header = () => {
             alt="logo Célia Roettger"
           />
         </Link>
+        <div className={style.displayLogin}>
+          <div className={style.loginContainer}>
+            <div className={style.signIn}>
+              <button className={style.signInBtn} type="button">
+                Sign In
+              </button>
+            </div>
+            <div className={style.signUp}>
+              <button className={style.signUpBtn} type="button">
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
       <div className={style.mainNavContainer}>
         <nav className={style.navContainer}>

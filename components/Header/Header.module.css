@@ -1,12 +1,33 @@
-.logoContainer {
+.logoLoginWrapper {
   display: flex;
   justify-content: center;
+  gap: 600px;
+  align-items: center;
   margin-top: 30px;
 }
 
 .logo {
   width: 15%;
   cursor: pointer;
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.signInBtn {
+  width: 4vw;
+  height: 4vh;
+}
+
+.signUpBtn {
+  width: 4vw;
+  height: 4vh;
+  background-color: #c53348;
+  border-radius: 40px;
 }
 
 .ul {
